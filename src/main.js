@@ -65,9 +65,9 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     } else if (imc < 25) {
         imagen = '<img src="public/mediano.jpg" alt="Peso normal" width="150">';
     } else if (imc < 30) {
-        imagen = '<img src="imagenes/gordo.jpg" alt="Sobrepeso leve" width="150">';
+        imagen = '<img src="public/gordo.jpg" alt="Sobrepeso leve" width="150">';
     } else {
-        imagen = '<img src="imagenes/gordo.jpg" alt="Sobrepeso" width="150">';
+        imagen = '<img src="public/gordo.jpg" alt="Sobrepeso" width="150">';
     }
 
     document.getElementById('resultado').innerHTML = mensaje + '<br>' + imagen;
