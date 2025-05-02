@@ -58,11 +58,24 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     else if (imc < 25) mensaje += 'Tu IMC es normal.';
     else if (imc < 30) mensaje += 'Tienes un IMC superior al normal.';
     else mensaje += 'Estás en sobrepeso, considera mejorar tus hábitos.';
+    let imagen = '';
 
-    document.getElementById('resultado').textContent = mensaje;
+    if (imc < 18.5) {
+        imagen = '<img src="public/flaco.jpg" alt="Bajo peso" width="150">';
+    } else if (imc < 25) {
+        imagen = '<img src="public/mediano.jpg" alt="Peso normal" width="150">';
+    } else if (imc < 30) {
+        imagen = '<img src="imagenes/gordo.jpg" alt="Sobrepeso leve" width="150">';
+    } else {
+        imagen = '<img src="imagenes/sobrepeso.png" alt="Sobrepeso" width="150">';
+    }
+
+    document.getElementById('resultado').innerHTML = mensaje + '<br>' + imagen;
+
 
     this.reset();
 });
+
 
 document.getElementById('ver-estadisticas').addEventListener('click', () => {
     const edadPromedio = personas.length ? (edadTotal / personas.length).toFixed(1) : 0;
