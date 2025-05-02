@@ -1,5 +1,4 @@
 
-
 Calculadora de IMC (Índice de Masa Corporal)
 Este proyecto es una calculadora interactiva de IMC desarrollada con HTML, CSS y JavaScript, que permite registrar personas y analizar su estado físico a partir de su peso y estatura. También muestra estadísticas generales como edad promedio, cantidad de personas con sobrepeso y más.
 
@@ -28,14 +27,14 @@ Edad promedio
 
 Persona con menor IMC
 
-🛠️ Tecnologías Usadas
+Tecnologías Usadas
 HTML5
 
 CSS3
 
 JavaScript (vanilla)
 
-🖥️ Cómo usar
+Cómo usar
 Clona o descarga este repositorio.
 
 Abre el archivo index.html en tu navegador.
