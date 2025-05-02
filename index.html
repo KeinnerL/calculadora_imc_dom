@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>calculadora de imc</title>
+  </head>
+  <body>
+    <main class="contenedor-padre"> 
+      <form class="formulario" id="formulario">
+        <h1>Calculador De Masa Corporal (IMC)</h1>
+
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+
+        <label for="genero">Genero:</label>
+        <select  id="genero" required>
+          <option value="">Selecione</option>
+          <option value="femenino">Femennino</option>
+          <option value="masculino">masculino</option>
+        </select>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Escribe tu edad" required>
+
+        <label for="peso">Peso (kg) </label>
+        <input type="number" id="peso" placeholder="Escribe tu peso" required>
+
+
+        <label for="estatura">Estatura (cm)</label>
+        <input type="number" id="estatura" placeholder="Escribe tu estatura" required>
+
+        <button type="submit">Calcular IMC</button>
+        <section id="resultado"></section>
+        <section id="estadisticas"></section>
+
+        <button id="ver-estadisticas">Ver estadisticas</button>
+      </form>
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

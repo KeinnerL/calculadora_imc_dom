@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+.contenedor-padre{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  background: linear-gradient(to bottom,#ffffff,#000000);
+  display: flex;
+  justify-content: center;
+}
+.formulario{
+  background-color: aliceblue;
+  height: 90%;
+  min-height: 100vh;
+  max-height: 100%;
+  box-shadow: 0 0 15px rgb(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+
+  label{
+    font-size: 100%;
+  }
+  h1{
+    font-family: 70%;
+    font-family: cursive;
+    color: rgb(53, 2, 2);
+    text-align: center;
+  }
+}
+#resultado, #estadisticas {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+button{
+  background-color: rgb(128, 184, 248);
+}
+button:hover{
+  background-color: rgb(0, 106, 255);
+}
